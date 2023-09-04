@@ -20,6 +20,17 @@ function updateTime() {
       "h:mm:ss:SS[<small>]A[</small>]"
     )}`;
   }
+
+  let seoulElement = document.querySelector("#seoul");
+  if (seoulElement) {
+    let seoulDateElement = seoulElement.querySelector(".date");
+    seoulTimeElement = seoulElement.querySelector(".time");
+    seoulTime = moment().tz("Asia/Seoul");
+    seoulDateElement.innerHTML = seoulTime.format("MMMM Do YYYY");
+    seoulTimeElement.innerHTML = `${seoulTime.format(
+      "h:mm:ss:SS[<small>]A[</small>]"
+    )}`;
+  }
 }
 
 function updateCity(event) {
@@ -45,7 +56,7 @@ function updateCity(event) {
 }
 
 updateTime();
-setInterval(updateTime, 1);
+setInterval(updateTime, 1000);
 
 let citySelectElement = document.querySelector("#city");
 citySelectElement.addEventListener("change", updateCity);
