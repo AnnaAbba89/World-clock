@@ -1,13 +1,12 @@
 body {
-  background: radial-gradient(
-    592px at 48.2% 50%,
-    rgba(255, 255, 249, 0.6) 0%,
-    rgb(160, 199, 254) 74.6%
-  );
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/792/original/backround_photo.jpg?1693858602");
+  background-repeat: no repeat;
+  background-size: 100%;
   font-family: sans-serif;
 }
 
 h1 {
+  color: #060610;
   text-align: center;
   font-family: sans-serif;
   font: size 36px;
@@ -29,7 +28,11 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background: white;
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(160, 199, 254) 74.6%
+  );
   padding: 40px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
@@ -63,5 +66,8 @@ select {
 footer {
   text-align: center;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer {
+  color: rgba(255, 255, 255, 0.8);
 }
